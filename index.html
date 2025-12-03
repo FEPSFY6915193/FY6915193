@@ -71,8 +71,7 @@ body {
     </table>
     <hr> 
     <h3 id="Abstract">Abstract</h3> 
-    <p class="ex1" > 
-       <pre id="Abstract"> 
+       <pre id="Introduction_InText"> 
 “Trade smart,Grow rich” refers to what successful traders do that are different from those who trade based on luck and their feelings. 
 Rather than chasing short term gains, it depends on the strategy used to invest, the techniques and how you manage the risk. This article 
 shapes the essentials on how to manage risk effectively, trade consistently and getting longer term rewards . By changing the perspectives
@@ -84,8 +83,7 @@ are the ability to analyse data, research, focus, be in self control and be orga
   </p> 
 
 <h3 id="Main body">Main body</h3> 
-    <p class="ex1" > 
-      <pre id="Main Body"> 
+        <p id="Analysis_InText"> 
 Numerous investors evaluate companies according to their fundamentals—such as sales, valuation, or industry trends—yet these basic considerations
 may not necessarily manifest in the market price. Technical analysis seeks to predict price movements by examining historical data, mainly price
 and volume (Shobit seth, 2024). Using historical data or charts may seem frightening to new traders initially, but they should learn how technical analysis offers 
@@ -208,10 +206,10 @@ losses on the downside and allow one to collect profits before chances are lost.
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Abstract");
-    const AnalysisCount = displayWordCount("Main body"); 
+    const IntroductionCount = displayWordCount("Introduction_InText");
+    const AnalysisCount = displayWordCount("Analysis_InText"); 
     // Calculate the sum of all selected sections
-    const totalWordCount = AbstractCount + Main bodyCount; 
+    const totalWordCount = IntroductionCount + AnalysisCount; 
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
